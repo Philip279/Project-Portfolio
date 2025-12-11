@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Cape Town / Booking</title>
+    <link rel="stylesheet" href="./CSS/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Charm:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-top">
+                <div class="logo">
+                    <img src=".//Images/travel-6913775_1280.png" alt="Explore Cape Town Logo">                     
+                    <h1>Explore Cape Town</h1>
+                </div>
+            </div>
+            <!-- Navigation goes here -->
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Bookings.html" class="active">Booking</a></li>           
+                    <li><a href="./Plan_a_Trip.html">Plan a Trip</a></li>
+                    <li><a href="./Culture.html">Culture</a></li>           
+                    <li><a href="./Attractions.html">Attractions</a></li>
+                    <li><a href="./About_Us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>   
+        <div class="booking-image">
+            <!-- Page Content Starts here -->
+            <main class="booking-page">
+                <section class="booking-header">
+                    <h2>Plan Your Trip!</h2>
+                </section>
+                <div class="booking-form">
+                    <!-- Form starts here-->
+                    <form>
+                        <!-- Personal information -->
+                        <fieldset>
+                            <legend>Personal Information</legend><br>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" required >
+
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname" required>
+
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>  
+
+                            <label for="number">Phone Nummber:</label>
+                            <input type="tel" id="number" name="number" required>                                      
+                        </fieldset>
+                        <!-- Travel Details -->
+                        <fieldset>
+                            <legend>Travel Details</legend>
+
+                            <label for="travelers">Number of Travelers:</label>
+                            <input type="number" id="travelers" name="travelers" min="1" required>
+
+                            <label for="date">When are you planning to travel:</label>
+                            <input type="date" id="date" name="date" required>
+
+                            <label for="tours">Which Tours are you most interested in:</label>
+                            <select id="tours" name="tours" required>
+                                <option value="" disabled selected>Select a tour</option> <!-- disables the first option of being selected-->
+                                <option value="Shark Cage Diving">Shark Cage Diving</option>
+                                <option value="Snorkeling">Snorkeling</option>
+                                <option value="Surfing">Surfing</option>
+                                <option value="Robben Island tour">Robben Island tour</option>
+                                <option value="Whale Watching">Whale Watching</option>
+                                <option value="Wine Tasting in the Vineyards">Wine Tasting in the Vineyards</option>
+                                <option value="Table Mountain Cable Car">Table Mountain Cable Car</option>
+                                <option value="Lion's Head Hike">Lion's Head Hike</option>
+                            </select><br><br>
+                            <label for="comments">Additional Comments:</label>
+                            <textarea id="comments" name="comments" placeholder="Enter any additional comments or information" rows="3"></textarea>   
+                        </fieldset>
+                        <!-- Best way to contact -->
+                        <fieldset>
+                            <legend>What is the best way to contact you?</legend>
+                                <div class="radio-buttons">
+                                <input type="radio" id="phone" name="contact-method" value="Phone">
+                                <label for="phone">Phone</label>
+
+                                <input type="radio" id="radio-email" name="contact-method" value="email">
+                                <label for="radio-email">Email</label>
+
+                                <input type="radio" id="either" name="contact-method" value="either">
+                                <label for="either">Either</label>
+                            </div>   
+                        </fieldset>                
+                        <!-- Submit and Cancel buttons -->
+                        <div class="form-buttons" >
+                            <input class="button" type="submit" value="Submit"> 
+                            <input class="button" type="reset" value="Cancel">
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+            <!-- Return to top Button -->
+            <div class="return-top-button">
+                <a href="#top" class="return-top">Back to top</a>
+            </div>
+        <!-- Referance to Images -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Explore Cape Town. All rights reserved.</p>
+                <p>contact us: <a href="mailto:info@explorecapetown.com">info@explorecapetown.com</a></p>
+                <p>Image credits: See our <a href="./Assets.html">Asset Page</a></p>
+            </div>
+        </footer>
+    </div>       
+</body>
+</html>
